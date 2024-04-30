@@ -1,4 +1,4 @@
-body {
+.fichabody {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
     position: relative;
     background-color: #fff;
-    width: 45rem;
+    width: 56rem;
     height: 60rem;
     margin: 20px auto;
     padding: 20px;
@@ -84,10 +84,10 @@ form.ficha header section.atributos_iniciais ul li{
 form.ficha header section.atributos_iniciais ul li label{
 
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Times New Roman';
     margin-bottom: 6px;
-    /* font-weight: bold; */
+ 
 
 }
 

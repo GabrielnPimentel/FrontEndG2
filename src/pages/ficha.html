@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha de RPG</title>
-    <link rel="stylesheet" href="../components/extends.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div class="fichabody" id="bodyficha">
     <form class="ficha">
         <header>
         <section class="Nome_persona">
-            <label for="Nome do personagem">Nome do personagem</label>
+            <label for="Nome do personagem">NOME DO PERSONAGEM</label>
             <input type="text" placeholder="Nome"/>
         </section>
         <section class="atributos_iniciais">
             <ul>
                 <li>
-                    <label for="Classe">Classe</label>
+                    <label for="Classe">CLASSE</label>
                     <input type="text" placeholder="Classe/trabalho"/>
                 </li>
                 <li>
-                    <label for="Raça">Raça</label>
+                    <label for="Raça">RAÇA</label>
                     <input type="text" placeholder="Raça"/>
                 </li>
                 <li>
-                    <label for="Genero">Genero</label>
+                    <label for="Gênero">GÊNERO</label>
                     <input type="text" placeholder="Genero"/>
                 </li>
                 <li>
-                    <label for="Idade">Idade</label>
+                    <label for="Idade">IDADE</label>
                     <input type="number" placeholder="Idade"/>
                 </li>
             </ul>
         </section>
     </header>
     <hr>
-    <div class="atributos">
-        <div class="corpo">
-            <h2><b>Corpo</b></h2>
-            <section class="meio">
+<section>
+    <section class="atributos">
+            <section class="corpo">
                 <form class="segundo">
                   <input class="Corpo_personagem" type="number" placeholder="Altura">  
                   <input class="Corpo_personagem" type="number" placeholder="Força">
@@ -46,8 +45,7 @@
                   <input class="Corpo_personagem" type="number" placeholder="Energia">
                 </form>
             </section>
-        </div>
-    </div>
+    </section> 
     </form>
-</body>
+</div>
 </html>
