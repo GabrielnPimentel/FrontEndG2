@@ -1,60 +1,50 @@
-
-.card-container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-}
-  
-.row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-  
-.card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 40px 40px;
-    position: relative;
-    
+    margin-top: 50px;
 }
 
-.cardFrente,
-.cardTras {
+.circle-container {
+    display: flex;
+}
+
+.circle-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 40px 40px;
+    perspective: 1000px;
+}
+
+.front, .back {
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    border: 5px solid #000000;
-    border-radius: 30px;
-}
-  
-.cardFrente img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-}
-  
-.cardTras {
-    transform: rotateY(180deg);
     transition: transform 0.5s;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-  
-.card:hover .cardFrente {
-    transform: rotateY(-180deg);
-}
-  
-.card:hover .cardTras {
-    transform: rotateY(0deg);
+    border-radius: 50%;
 }
 
-  
+.front {
+    background-color: #ccc; /* Cor de fundo da parte da frente do card */
+}
+
+.back {
+    background-color: red; /* Cor de fundo da parte de trás do card */
+    transform: rotateY(180deg);
+}
+
+.circle-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.circle-card:hover .back {
+    transform: rotateY(0deg);
+}
