@@ -2,6 +2,7 @@
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
+    padding-bottom: 2rem;
     padding: 0;
 }
 
@@ -24,6 +25,16 @@ form.ficha header {
     align-content: stretch;
     align-items: stretch;
 }
+
+form.ficha section.atributos{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: flex-end;
+}
+
 
 form.ficha header section.Nome_persona{
     
@@ -95,6 +106,129 @@ form.ficha header section.atributos_iniciais ul li input{
 
     border: 0;
     border-bottom: 1px solid #ddd;
+}
+
+form.ficha div.atributos_sec{
+
+
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+
+    /* width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em; */
+
+}
+
+form.ficha div.atributos_sec label{
+
+    margin-top: 10px;
+    margin-bottom: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Times New Roman';
+
+
+}
+form.ficha div.atributos_sec ul li{
+    
+    display: flex;
+    align-items: center;
+}
+
+form.ficha div.atributos_sec ul li *{
+    
+    margin-left: 5px;
+
+}
+
+form.ficha div.atributos_sec ul li label{
+
+    text-transform: none;
+    font-size: 15px;
+    text-align: left;
+    order: 3;
+    font-family: 'Times New Roman';
+}
+form.ficha div.atributos_sec ul li input{
+    
+    width: 40px;
+    font-size: 12px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+    order: 2;
+}
+
+form.ficha div.atributos_sec label.name_att{
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+form.ficha div.skills{
+    
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+}
+
+form.ficha div.skills label.skillhead{
+
+  
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+form.ficha div.skills ul li{
+    
+    display: flex;
+    align-items: center;
+}
+
+form.ficha div.skills ul li *{
+    
+    margin-left: 5px;
+
+}
+
+form.ficha div.skills ul li label{
+
+    text-transform: none;
+    font-size: 15px;
+    text-align: left;
+    order: 3;
+}
+
+form.ficha div.skills ul li input{
+    
+    width: 40px;
+    font-size: 12px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+    order: 2;
+}
+
+
+form.ficha div.meio{
+
+    /* display: flex; */
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+
 }
 
 /* .cabecalho{
