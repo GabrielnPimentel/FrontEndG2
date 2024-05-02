@@ -20,3 +20,9 @@ header.style.marginTop = value * 0.5 + 'px';
 
 var audio = document.getElementById("myaudio");
 audio.volume = 0.1;
+
+$(".accordion-item__line").click(function () {
+    var container = $(this).parents(".accordion-list__item");
+    var answer = container.find(".accordion-item");
+    answer.toggleClass("accordion-item--opened");
+});
