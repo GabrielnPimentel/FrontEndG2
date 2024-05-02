@@ -10,13 +10,13 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#2b1055,#7597de);
 }
 
 
 header{
     position: absolute;
-    margin-left: 30px;
+    /* Esse margin-left estava jogando toda a página pra esquerda e deixando uma barra lateral a direita */
+    /* margin-left: 30px; */
     top: 0;
     left: 0;
     width: 100%;

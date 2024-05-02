@@ -1,0 +1,12 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+}
