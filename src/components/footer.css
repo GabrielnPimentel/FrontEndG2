@@ -3,10 +3,17 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    background: linear-gradient(to right,#2b1055,#7597de);
 }
 
 .footer_container{
     display: flex;
     justify-content: flex-end;
     padding: 7px;
+}
+
+.footer_item{
+    background-color: #449aa8;
+    border-radius: 20px;
+    padding: 6px 15px;
 }
