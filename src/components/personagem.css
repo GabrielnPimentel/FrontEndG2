@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap'); 
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #191c29;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header .logo{
+  color: burlywood;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover , 
+header ul li a.active{
+  transition: 0.3s;
+  background: #449aa8;
+  color: #2b1055;
+}
+
+.titulo {
+  margin-top: 50px;
+}
+
+
+.titulo h1{
+  margin-bottom: 50px;  
+  color: #f8bd19;
+  font-family: 'Poppins';
+  font-size: 2.5rem;
+}
+
+
+.stars{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1
+}
+
+.moon{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  mix-blend-mode: screen; 
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+* {
+   box-sizing: border-box;
+} 
+    
+    
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+}
+    
+      
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+      
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+      
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+      
+.wrapper::before,
+.wrapper::after {
+   content: "";
+   opacity: 0;
+   width: 100%;
+   height: 80px;
+   transition: all 0.5s;
+   position: absolute;
+   left: 0;
+}
+    
+.wrapper::before {
+  top: 0;
+   height: 100%;
+   background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+}
+    
+.wrapper::after {
+   bottom: 0;
+   opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+      
+    
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+    
+      
+.card:hover .wrapper::after {
+  height: 120px;
+}
+    
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+    
+    
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+    
+      
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+      
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right,#1c0522, #2b1055);
+}
+
+.footer_container{
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 7px; */
+}
+
+.footer_item{
+  background-color: #449aa8;
+  border-radius: 20px;
+  /* padding: 6px 15px; */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .card {
+    margin: 10px 20px;
+    margin-right: 30px;
+    gap: 10px;
+
+  }
+
+  body h1{
+    margin-top: 150px;
+  }
+
+  .moon{
+    margin: none;
+  }
+
+  .titulo{
+    margin: none;
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .titulo h1 { 
+    font-size: 1.8rem; 
+  }
+
+  .card {
+    /* width: 90%; */
+    margin: 0 auto 20px;
+  }
+
+  .titulo{
+    margin-top: 25px;
+  }
+
+  .titulo h1{
+    margin-top: 50px;
+  }
+
+  header ul li{
+    list-style: none;
+    margin: 5px 5px 5px 5px;
+  }
+
+}
