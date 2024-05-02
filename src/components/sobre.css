@@ -7,11 +7,13 @@
 }
 
 .header_sobre{
-    position: fixed;
+    position: absolute;
+    /* Esse margin-left estava jogando toda a página pra esquerda e deixando uma barra lateral a direita */
+    /*  margin-left: 30px;  */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +48,7 @@ ul {
 }
 
 ul li {
-    margin-left: 20px;
+    margin-right: 110px;
 }
 
 ul li a {
@@ -58,6 +60,13 @@ ul li a {
 
 ul li a.active {
     background: #449aa8;
+}
+
+header ul li a:hover , 
+header ul li a.active{
+    transition: 0.3s;
+    background: #449aa8;
+    color: #2b1055;
 }
 
 .container {
