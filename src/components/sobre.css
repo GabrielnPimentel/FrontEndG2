@@ -1,38 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b1055;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.logo {
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+ul li a.active {
+    background: #449aa8;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 
-.circle-container {
+.circle-container1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -100px;
+}
+.circle-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .circle-card {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    margin: 40px 40px;
+    margin: 20px;
     perspective: 1000px;
+    position: relative;
+    overflow: hidden;
 }
 
 .front, .back {
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     backface-visibility: hidden;
     transition: transform 0.5s;
     border-radius: 50%;
 }
 
 .front {
-    background-color: #ccc; /* Cor de fundo da parte da frente do card */
+    background-color: #ccc;
 }
 
 .back {
-    background-color: red; /* Cor de fundo da parte de trás do card */
+
     transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: -20px;
+    font-size: 13px;
 }
 
 .circle-card img {
