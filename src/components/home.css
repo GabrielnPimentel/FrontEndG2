@@ -16,7 +16,7 @@ body{
 header{
     position: absolute;
     /* Esse margin-left estava jogando toda a página pra esquerda e deixando uma barra lateral a direita */
-    /* margin-left: 30px; */
+    /*  margin-left: 30px;  */
     top: 0;
     left: 0;
     width: 100%;
@@ -72,6 +72,10 @@ section{
     overflow: hidden;
 }
 
+#stars{
+    z-index: -1;
+}
+
 section::before{
     content: '';
     position: absolute;
@@ -82,7 +86,7 @@ section::before{
     z-index: 1000;
 }
 
-section img{
+ section img{
     position: absolute;
     top: 0;
     left: 0;
@@ -90,7 +94,7 @@ section img{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-}
+} 
 
 
 section img#moon{
