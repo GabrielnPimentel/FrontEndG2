@@ -146,3 +146,11 @@ section{
     border-radius: 20px;
     padding: 6px 15px;
 }
+
+.classButton{
+    width: auto;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #449aa8;
+    border-radius: 5px;
+}
