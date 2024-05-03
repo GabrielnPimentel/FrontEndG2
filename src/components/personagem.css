@@ -266,17 +266,21 @@ header ul li a.active{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
   header {
     padding: 10px;
   }
 
+  header a{
+    padding-left: 90px;
+  }
+
   .titulo h1 { 
     font-size: 1.8rem; 
+    margin-left: 85px;
   }
 
   .card {
-    /* width: 90%; */
     margin: 0 auto 20px;
   }
 
@@ -290,7 +294,12 @@ header ul li a.active{
 
   header ul li{
     list-style: none;
-    margin: 5px 5px 5px 5px;
+
+  }
+
+  .container{
+    margin-bottom: 30px;
   }
 
 }
+
