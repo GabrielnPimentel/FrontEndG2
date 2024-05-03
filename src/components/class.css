@@ -111,7 +111,7 @@ section{
 }
 
 .descricao {
-  border: 5px solid #449aa8;
+border: 5px solid #449aa8;
   background-color: wheat;
   border-radius: 10px;
   width: 300px;
@@ -153,4 +153,8 @@ section{
     margin-top: 5px;
     background-color: #449aa8;
     border-radius: 5px;
+}
+
+.hidden{
+    display: none;
 }
