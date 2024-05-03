@@ -9,18 +9,74 @@
 }
 
 
-.body{
+body{
     background-color: #191c29;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    padding: 20px; 
+    margin-bottom: 50px; 
 }
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 10000; */
+  }
+  
+  header .logo{
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li{
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  header ul li a:hover , 
+  header ul li a.active{
+    transition: 0.3s;
+    background: #449aa8;
+    color: #2b1055;
+  }
 
 .fichabody {
+    margin-top: 100px;  
+    margin-left: 15%;
+    
+} 
 
-    font-family: 'Poppins';
-    margin: 0;
-    padding-bottom: 2rem;
-    padding: 0;
-  
-}
+#bodyficha{
+    background-image: url('/src/assets/pergaminho1.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: fit-content;
+} 
 
 .stars{
     position: fixed;
@@ -31,7 +87,7 @@
     object-fit: cover;
     z-index: -1
 }
-  
+
 .moon{
     position: fixed;
     top: 0;
@@ -41,24 +97,30 @@
     object-fit: cover;
     z-index: -1;
     mix-blend-mode: screen; 
-}
+  }
+  
   
 .ficha {
 
     position: relative;
-    background-image: url(./assets/fundo.jpeg);
-    width: 48rem;
-    height: 95%;
+    background-image: url(./assets/fundo.jpeg); 
+    width: 55rem;
+    height: 60rem;
     margin: 20px auto;
-    padding: 20px;
-    border: 2px solid rgba(68, 116, 161, 0.664);
+    padding: 20px; 
+    /* border: 2px solid rgba(68, 116, 161, 0.664); */
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: +1;
+    /* z-index: +1; */
+}
+section{
+    width: fit-content;
+    margin-bottom: 2rem;
+
 }
 
 form.ficha header {
-
+    /* margin: 2rem; */
     padding-bottom: 2rem;
     display: flex;
     align-content: stretch;
@@ -66,8 +128,8 @@ form.ficha header {
 }
 
 form.ficha section.atributos{
-
-       padding-top: 1rem;
+    margin: 130px;
+    padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -594,3 +656,23 @@ form.ficha div.crencas label.NOME{
     font-weight: bold;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right,#1c0522, #2b1055);
+  }
+  
+  .footer_container{
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 7px; */
+  }
+  
+  .footer_item{
+    background-color: #449aa8;
+    border-radius: 20px;
+    /* padding: 6px 15px; */
+  }
