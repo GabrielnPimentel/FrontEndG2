@@ -27,6 +27,8 @@ header{
   z-index: 10000;
 }
 
+
+
 header .logo{
   color: burlywood;
   font-weight: 700;
@@ -101,6 +103,7 @@ header ul li a.active{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
 }
 
 
@@ -210,6 +213,13 @@ header ul li a.active{
 .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
+}
+
+.card a{
+  color: white;
+  text-decoration:none;
+  font-family: 'Poppins';
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer{
