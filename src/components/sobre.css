@@ -147,7 +147,7 @@ header ul li a.active{
 }
 
 .footer{
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -186,4 +186,35 @@ header ul li a.active{
         width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    body {
+      padding: 20px;
+    }
+  
+    header {
+      padding: 20px;
+    }
+  
+    .card {
+      margin: 10px 20px;
+      margin-right: 30px;
+      gap: 10px;
+  
+    }
+  
+    body h1{
+      margin-top: 150px;
+    }
+  
+    .moon{
+      margin: none;
+    }
+  
+    .titulo{
+      margin: none;
+      margin-top: 0;
+    }
+  }
 
