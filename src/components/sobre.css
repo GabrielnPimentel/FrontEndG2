@@ -10,7 +10,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ ul {
 }
 
 ul li {
-    margin-right: 110px;
+    margin-right: 20px;
 }
 
 ul li a {
@@ -147,12 +147,11 @@ header ul li a.active{
 }
 
 .footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 65px;
-  background: linear-gradient(to right,#1c0522, #2b1055);;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right,#1c0522, #2b1055);
 }
 
 .footer_container{
@@ -165,7 +164,6 @@ header ul li a.active{
     background-color: #449aa8;
     border-radius: 20px;
     padding: 6px 15px;
-    margin-left: 50px;
 }
 
 @media screen and (max-width: 480px) {
