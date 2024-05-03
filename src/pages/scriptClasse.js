@@ -40,5 +40,6 @@ function applyEffect() {
     function redirecionar() {
         window.location.href = "./ficha.html";
     }
-  
-  
+
+    var audio = document.getElementById("myaudio");
+audio.volume = 0.1;
