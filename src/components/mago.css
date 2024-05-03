@@ -1,0 +1,70 @@
+#info_persona{
+    padding: 0;
+}
+
+.info_persona{
+    display: flex;
+    width: 100%;
+}
+
+.cartao {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 450px;
+  height: 450px;
+  margin: -150px;
+  float: left;
+  /* perspective: 500px; */
+}
+
+.cartao_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.card_front {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  /* transform: rotateY(180deg); */
+  z-index: 1;
+}
+
+.card_front,
+.card_tras {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.card_front img {
+  width: auto;
+  height: 400px;
+}
+
+.about_classe{
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao {
+  border: 5px solid #449aa8;
+  background-color: wheat;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.about_personagem{
+    width: 100px;
+}

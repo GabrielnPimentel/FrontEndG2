@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../components/extends.css" />
+    <title>Mago</title>
+  </head>
+  <body>
+    <div class="fundo"></div>
+    <header>
+        <a href="#" class="logo">RPG-Dragon</a>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="src/pages/personagem.html">Personagens</a></li>
+          <li><a href="./src/pages/sobre.html">Sobre</a></li>
+          <li><a href="./src/pages/contato.html">Contato</a></li>
+        </ul>
+      </header>
+
+    <section id="info_persona" class="info_persona">
+      <div class="cartao">
+        <div
+          id="cartao_content"
+          class="cartao_content"
+          onmouseover="applyEffect()"
+          onmouseout="revertEffect()"
+        >
+          <div class="card_back">
+            <img src="../assets/cardBack.png" alt="" />
+          </div>
+          <div class="card_front hidden">
+            <img
+              src="../assets/persongens/bard/bardo3-removebg-edit.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="about_classe"></div>
+        <div class="descricao hidden">
+          <p class="about_personagem hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus dicta quisquam iure esse reiciendis, debitis harum
+            labore, asperiores, quasi expedita similique quod autem atque
+            accusantium corrupti accusamus minus magni? Aliquid.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer_container">
+          <div class="footer_item">
+            <p>RPG Dragon - Desenvolvido pelo Grupo 2</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+  <script src="./scriptMago.js"></script>
+</html>
