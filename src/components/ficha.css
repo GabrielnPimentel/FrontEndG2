@@ -676,7 +676,12 @@ form.ficha div.crencas label.NOME{
   
   .footer_item{
     background-color: #449aa8;
-    border-radius: 20px;
+    border-radius: 20px; 
+    height:50px;
+    width: 273px;
+    padding-top: 10px;
+    font-size: 14px;
+
     /* padding: 6px 15px; */
   }
 
