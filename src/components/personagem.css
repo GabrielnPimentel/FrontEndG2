@@ -268,36 +268,40 @@ header ul li a.active{
 
 @media screen and (max-width: 414px) {
   header {
-     padding: 10px; 
+    padding: 10px; 
+  }
+  .logo{
+    padding-left: 60px;
   }
 
-  header a{
-    padding-left: 50px;
-  }
+  header ul li{
+    list-style: none;
+    padding: none;
+    margin: none;
+    margin-bottom: 15px;
 
+  }
+  
   .titulo h1 { 
     font-size: 1.8rem; 
     margin-left: 50px;
   }
 
+  
+  .titulo{
+    margin-top: 80px;
+  }
+  
+  .titulo h1{
+    margin: 20px 20px 20px 20px;
+    padding: 20px 0px 0px 60px;
+  }
+  
   .card {
     margin: 0 auto 20px;
   }
 
-  .titulo{
-    margin-top: 25px;
-  }
-
-   .titulo h1{
-    margin-top: 50px;
-  }
- 
-  header ul li{
-    list-style: none;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0 ;
-
-  }
+  
 
   .container{
     margin-bottom: 30px;
