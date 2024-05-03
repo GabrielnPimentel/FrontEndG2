@@ -5,157 +5,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha de RPG</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleficha.css">
 </head>
-<div class="fichabody" id="bodyficha">
-    <form class="ficha">
-        <header>
-            <section class="Nome_persona">
-                <label for="Nome do personagem">NOME DO PERSONAGEM</label>
-                <input type="text" placeholder="Nome" />
-            </section>
-            <section class="atributos_iniciais">
-                <ul>
-                    <li>
-                        <label for="Classe">CLASSE</label>
-                        <input type="text" placeholder="Classe/trabalho" />
-                    </li>
-                    <li>
-                        <label for="Raça">RAÇA</label>
-                        <input type="text" placeholder="Raça" />
-                    </li>
-                    <li>
-                        <label for="Gênero">GÊNERO</label>
-                        <input type="text" placeholder="Genero" />
-                    </li>
-                    <li>
-                        <label for="Idade">IDADE</label>
-                        <input type="number" placeholder="Idade" />
-                    </li>
-                </ul>
-            </section>
-        </header>
-        <hr>
-        <section>
-            <section class="atributos">
-                <div class="atributos_sec">
-                    <label class="name_att">Corpo</label>
+<body>
+<div class="fundo">
+    <div class="fichabody" id="bodyficha">
+        <form class="ficha">
+            <header>
+                <section class="Nome_persona">
+                    <label for="Nome do personagem">NOME DO PERSONAGEM</label>
+                    <input type="text" placeholder="Nome" />
+                </section>
+                <section class="atributos_iniciais">
                     <ul>
                         <li>
-                            <label for="Altura">Altura</label>
-                            <input type="text" placeholder="1,70" />
+                            <label for="Classe">CLASSE</label>
+                            <input type="text" placeholder="Classe/trabalho" />
                         </li>
                         <li>
-                            <label for="Força">Força</label>
-                            <input type="number" placeholder="+0" />
+                            <label for="Raça">RAÇA</label>
+                            <input type="text" placeholder="Raça" />
                         </li>
                         <li>
-                            <label for="Saude">Saúde</label>
-                            <input type="number" placeholder="+0" />
+                            <label for="Gênero">GÊNERO</label>
+                            <input type="text" placeholder="Genero" />
                         </li>
                         <li>
-                            <label for="Energia">Energia</label>
-                            <input type="number" placeholder="+0" />
+                            <label for="Idade">IDADE</label>
+                            <input type="number" placeholder="Idade" />
                         </li>
                     </ul>
+                </section>
+            </header>
+            <section>
+                <section class="atributos">
+                    <div class="scores">
+                        <ul>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="inteligencia">Inteligência</label>
+                                    <input name="inteligencia" placeholder="+0" type="number" />
+                                </div>
+                                <div class="modificador">
+                                    <input name="inteligencia" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="bondade">Bondade</label>
+                                    <input name="bondade" placeholder="+0" type="number" />
+                                </div>
+                                <div class="modificador">
+                                    <input name="bondade" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="maldade">Maldade</label>
+                                    <input name="maldade" placeholder="+0" type="number" />
+                                </div>
+                                <div class="modificador">
+                                    <input name="maldade" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="Decepção">Decepção</label>
+                                    <input name="Decepção" placeholder="+0" type="number" />
+                                </div>
+                                <div class="modificador">
+                                    <input name="decepção" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="coragem">Coragem</label>
+                                    <input name="coragem" placeholder="+0" type="number" />
+                                </div>
+                                <div class="modificador">
+                                    <input name="coragem" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="extrovertido">Extrovertido</label>
+                                    <input name="introvertido" placeholder="+0" type="number">
+                                </div>
+                                <div class="modificador">
+                                    <input name="introvertido" placeholder="+0" />
+                                </div>
+                            </li>
+                            <li style="list-style: none;">
+                                <div class="score">
+                                    <label for="introvertido">Introvertido</label>
+                                    <input name="introvertido" placeholder="+0" type="number">
+                                </div>
+                                <div class="modificador">
+                                    <input name="introvertido" placeholder="+0" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="attaplicacao">
+                    <div class="inspiracao">
+                        <div class="label">
+                            <label for="inspiracao">Inspiração</label>
+                        </div>
+                        <input name="inspiracao" placeholder="+2" />
+                    </div>
+                    <div class="proeficiencia">
+                        <div class="label">
+                            <label for="proeficiencia">Proeficiência</label>
+                        </div>
+                        <input name="proeficiencia" placeholder="+2" />
+                    </div>
+                    <div class="skills">
+                       <!--  <label class="skillhead">SKILLS</label> -->
+                        <ul>
+                            <li>
+                                <label for="Acrobacia">Acrobacia</label>
+                                <input name="Acrobacia" placeholder="+0" type="number" />
+                                <input name="Acrobacia-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Atletismo">Atletismo</label>
+                                <input name="Atletismo" placeholder="+0" type="number" />
+                                <input name="Atletismo-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Decepção">Decepção</label>
+                                <input name="Decepção" placeholder="+0" type="number" />
+                                <input name="Decepção-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="História">História</label>
+                                <input name="História" placeholder="+0" type="number" />
+                                <input name="História-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Conhecimento">Conhecimento</label>
+                                <input name="Conhecimento" placeholder="+0" type="number" />
+                                <input name="IConhecimento-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Intimidação">Intimidação</label>
+                                <input name="Intimidação" placeholder="+0" type="number" />
+                                <input name="Intimidação-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Investigação">Investigação </label>
+                                <input name="Investigação" placeholder="+0" type="number" />
+                                <input name="Investigação-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Medicina">Medicina</label>
+                                <input name="Medicina" placeholder="+0" type="number" />
+                                <input name="Medicina-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Natureza">Natureza</label>
+                                <input name="Natureza" placeholder="+0" type="number" />
+                                <input name="Natureza-prof" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Percepção">Percepção</label>
+                                <input name="Percepção" placeholder="+0" type="number" />
+                                <input name="Percepção-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Persuasão">Persuasão</label>
+                                <input name="Persuasão" placeholder="+0" type="number" />
+                                <input name="Persuasão-prof" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Religião">Religião</label>
+                                <input name="Religião" placeholder="+0" type="number" />
+                                <input name="Religião-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Furtividade">Furtividade</label>
+                                <input name="Furtividade" placeholder="+0" type="number" />
+                                <input name="Furtividade-check" type="radio" />
+                            </li>
+                            <li>
+                                <label for="Sobrevivência">Sobrevivência</label>
+                                <input name="Sobrevivência" placeholder="+0" type="number" />
+                                <input name="Sobrevivência-check" type="radio" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="atributos_sec">
+                      <!--   <label class="name_att">Corpo</label> -->
+                        <ul>
+                            <li>
+                                <label for="Altura">Altura</label>
+                                <input type="text" placeholder="1,70" />
+                            </li>
+                            <li>
+                                <label for="Força">Força</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                            <li>
+                                <label for="Saude">Saúde</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                            <li>
+                                <label for="Energia">Energia</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                            <li>
+                                <label for="Destreza">Destreza</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                            <li>
+                                <label for="Beleza">Beleza</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                            <li>
+                                <label for="Higiene">Higiene</label>
+                                <input type="number" placeholder="+0" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="skills">
-                    <label class="skillhead">SKILLS</label>
-                    <ul>
-                        <li>
-                            <label for="Acrobacia">Acrobacia</label>
-                            <input name="Acrobacia" placeholder="+0" type="number"/>
-                            <input name="Acrobacia-check" type="radio"/>
-                        </li>
-                        <li>
-                            <label for="Manejo de Animais">Manejo de Animais</label>
-                            <input name="Manejo de Animais" placeholder="+0" type="number" />
-                            <input name="Manejo-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Atletismo">Atletismo</label>
-                            <input name="Atletismo" placeholder="+0" type="number" />
-                            <input name="Atletismo-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Decepção">Decepção</label>
-                            <input name="Decepção" placeholder="+0" type="number" />
-                            <input name="Decepção-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="História">História</label>
-                            <input name="História" placeholder="+0" type="number" />
-                            <input name="História-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Conhecimento">Conhecimento</label>
-                            <input name="Conhecimento" placeholder="+0" type="number" />
-                            <input name="IConhecimento-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Intimidação">Intimidação</label>
-                            <input name="Intimidação" placeholder="+0" type="number" />
-                            <input name="Intimidação-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Investigação">Investigação </label>
-                            <input name="Investigação" placeholder="+0" type="number" />
-                            <input name="Investigação-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Medicina">Medicina</label>
-                            <input name="Medicina" placeholder="+0" type="number" />
-                            <input name="Medicina-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Natureza">Natureza</label>
-                            <input name="Natureza" placeholder="+0" type="number" />
-                            <input name="Natureza-prof" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Percepção">Percepção</label>
-                            <input name="Percepção" placeholder="+0" type="number" />
-                            <input name="Percepção-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Persuasão">Persuasão</label>
-                            <input name="Persuasão" placeholder="+0" type="number" />
-                            <input name="Persuasão-prof" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Religião">Religião</label>
-                            <input name="Religião" placeholder="+0" type="number" />
-                            <input name="Religião-check" type="radio" />
-                          </li>  
-                          <li>
-                            <label for="Furtividade">Furtividade</label>
-                            <input name="Furtividade" placeholder="+0" type="number" />
-                            <input name="Furtividade-check" type="radio" />
-                          </li>
-                          <li>
-                            <label for="Sobrevivência">Sobrevivência</label>
-                            <input name="Sobrevivência" placeholder="+0" type="number" />
-                            <input name="Sobrevivência-check" type="radio" />
-                          </li>
-                    </ul>
-                </div>
+            <section class="novos_atributos">
                 <div class="meio">
                     <div class="personalidade">
-                      <label for="personalidade">Personalidade</label><textarea name="Personalidade"></textarea>
+                        <label for="personalidade">Personalidade</label>
+                        <textarea rows="35" cols="35" name="Personalidade"></textarea>
                     </div>
                     <div class="ideais">
-                      <label for="ideais">Ideais</label><textarea name="ideais"></textarea>
+                        <label for="ideais">Ideais</label>
+                        <textarea name="ideais" rows="35" cols="35"></textarea>
                     </div>
                     <div class="Defeitos">
-                      <label for="Defeitos">Defeitos</label><textarea name="Defeitos"></textarea>
+                        <label for="Defeitos">Defeitos</label>
+                        <textarea rows="35" cols="35" name="Defeitos"></textarea>
                     </div>
-                    <div>
+                    <div class="Características">
                         <label for="Características">Características</label>
-                        <textarea name="Características"></textarea>
-                      </div>
-                  </div>          
+                        <textarea name="Características" rows="35" cols="35"></textarea>
+                    </div>
+                </div> 
+                <div class="crencas">
+                  <!--   <label class="NOME">CRENÇAS</label> -->
+                    <ul>
+                        <li>
+                            <label for="poderes">Poderes</label>
+                            <input name="poderes" placeholder="+0" type="number" />
+                        </li>
+                        <li>
+                            <label for="destino">Destino</label>
+                            <input name="destino" placeholder="+0" type="number" />
+                        </li>
+                        <li>
+                            <label for="magia">Magia</label>
+                            <input name="magia" placeholder="+0" type="number" />
+                        </li>
+                        <li>
+                            <label for="bomemal">Bom & Mal</label>
+                            <input name="bomemal" placeholder="+0" type="number" />
+                        </li>
+                        <li>
+                            <label for="sorte">Sorte</label>
+                            <input name="sorte" placeholder="+0" type="number" />
+                        </li>
+                    </ul>
+                </div> 
             </section>
         </section>
+      </div>
     </form>
-</div>
+    </div>
+</body>
 </html>

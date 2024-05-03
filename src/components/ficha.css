@@ -1,26 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.body{
+    background-color: #191c29;
+}
+
 .fichabody {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+
+    font-family: 'Poppins';
     margin: 0;
     padding-bottom: 2rem;
     padding: 0;
+  
 }
 
+.stars{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1
+}
+  
+.moon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    mix-blend-mode: screen; 
+}
+  
 .ficha {
 
     position: relative;
-    background-color: #fff;
-    width: 56rem;
-    height: 60rem;
+    background-image: url(./assets/fundo.jpeg);
+    width: 48rem;
+    height: 95%;
     margin: 20px auto;
     padding: 20px;
     border: 2px solid rgba(68, 116, 161, 0.664);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: +1;
 }
 
 form.ficha header {
 
+    padding-bottom: 2rem;
     display: flex;
     align-content: stretch;
     align-items: stretch;
@@ -28,11 +67,12 @@ form.ficha header {
 
 form.ficha section.atributos{
 
+       padding-top: 1rem;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-    align-content: flex-end;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -42,7 +82,7 @@ form.ficha header section.Nome_persona{
     border-right: 0;
     border-radius: 10px 0 0 10px;
     padding: 5px 0;
-    background-color: #01093681;
+    /* background-color: #01093681; */
     width: 30%;
     display: flex;
     flex-direction: column-reverse;
@@ -56,7 +96,7 @@ form.ficha header section.Nome_persona label{
    /*  font-weight: bold; */
     text-align: center;
     font-size: 15px;
-    font-family: 'Times New Roman';
+    font-family: 'Poppins';
     
 }
 
@@ -65,62 +105,63 @@ form.ficha header section.Nome_persona input{
     padding: 0.5em;
     margin: 5px;
     border: 0;
+    opacity: 0.5;
     
 }
 
-form.ficha header section.atributos_iniciais{
+form.ficha section.atributos_iniciais{
 
     width: 70%;
     border: 1px solid black;
     border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 }
 
-form.ficha header section.atributos_iniciais ul{
+form.ficha section.atributos_iniciais ul{
 
     padding: 10px 0px 5px 0px;
     display: flex;
     flex-wrap: wrap;
 }
 
-form.ficha header section.atributos_iniciais ul li{
+form.ficha section.atributos_iniciais ul li{
 
     width: 33%;
     display: flex;
     flex-direction: column-reverse;
 }
 
-form.ficha header section.atributos_iniciais ul li label{
+form.ficha section.atributos_iniciais ul li label{
 
     text-align: center;
     font-size: 13px;
-    font-family: 'Times New Roman';
+    font-family: 'Poppins';
     margin-bottom: 6px;
  
 
 }
 
-form.ficha header section.atributos_iniciais ul li input{
+form.ficha section.atributos_iniciais ul li input{
 
     border: 0;
     border-bottom: 1px solid #ddd;
+    opacity: 0.5;
 }
 
 form.ficha div.atributos_sec{
 
-
-    width: 20%;
+    height: 33%;
+    width: 100%;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 5px;
-
-    /* width: 70%;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em; */
+/*     padding-top: 1rem; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -131,7 +172,7 @@ form.ficha div.atributos_sec label{
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Times New Roman';
+    font-family: 'Poppins';
 
 
 }
@@ -153,8 +194,9 @@ form.ficha div.atributos_sec ul li label{
     font-size: 15px;
     text-align: left;
     order: 3;
-    font-family: 'Times New Roman';
+    font-family: 'Poppins';
 }
+
 form.ficha div.atributos_sec ul li input{
     
     width: 40px;
@@ -163,6 +205,7 @@ form.ficha div.atributos_sec ul li input{
     border: 0;
     border-bottom: 1px solid black;
     order: 2;
+    opacity: 0.5;
 }
 
 form.ficha div.atributos_sec label.name_att{
@@ -170,16 +213,37 @@ form.ficha div.atributos_sec label.name_att{
     display: flex;
     justify-content: center;
     font-weight: bold;
+
 }
+
+form.ficha div.attaplicacao{
+    
+    gap: 1rem;
+}
+
+section.atributos{
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+
+}
+
 
 form.ficha div.skills{
     
-    width: 30%;
+    width:100%;
+    height: 53%;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px 5px;
+    padding: 30px 5px;
     text-transform: uppercase;
-    font-family: 'Times New Roman';
+    font-family: 'Poppins';
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 form.ficha div.skills label.skillhead{
@@ -187,7 +251,10 @@ form.ficha div.skills label.skillhead{
   
     display: flex;
     justify-content: center;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+  
 }
 
 form.ficha div.skills ul li{
@@ -218,129 +285,312 @@ form.ficha div.skills ul li input{
     border: 0;
     border-bottom: 1px solid black;
     order: 2;
+    opacity: 0.5;
 }
 
 
-form.ficha div.meio{
-
-    /* display: flex; */
-    width: 20%;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 5px;
-
-}
-
-/* .cabecalho{
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 20px;
-
-}
- */
-
-/* .inicial{
-
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.inicio{
-
-    width: 20%;
-    padding-left: 10px;
-    height: 23px;
-    line-height: 30px;
-    border-radius: 15px;
-    border: 1px solid #292929;
-    outline: none;
-    margin-bottom: 20px;
-
-}
-
-.ficha h1{
-
-    padding-bottom: 1rem;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium';
-    font-size: 40px;
-}
-.Corpo_personagem{
+form.ficha section.novos_atributos{
 
     display: flex;
     justify-content: right;
-    padding-left: 10px;
-    height: 23px;
-    line-height: 30px;
-    border-radius: 15px;
-    border: 1px solid #292929;
-    outline: none;
-    margin-bottom: 20px
+    height: 25rem;
+    width: 44%;
+    border-radius: 10px;
+    padding: 10px 5px;
+    flex-wrap: wrap;
+}
+
+form.ficha div.personalidade textarea{
+
+    border-radius: 10px 10px 0 0;
+}
+
+form.ficha div.meio{
+
+    width: 100%;
+    padding: 10px;
+ /*    background: #bbb; */
+    border-radius: 10px;
 
 }
-.meio{
+
+form.ficha section.novos_atributos div{
+
+    /* background: white; */
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: 'Times New Roman';
+    margin-top: 1rem;
+    
+}
+
+form.ficha section.novos_atributos div.crencas{
+
+    /* background: white; */
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: 'Times New Roman';
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+form.ficha section.novos_atributos div label{
+
+    text-align: center;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+form.ficha section.novos_atributos div textarea{
+
+    border: 0;
+    border-radius: 0;
+    height: 5.5rem;
+    font-size: 15px;
+}
+
+form.ficha section.novos_atributos div.personalidade{
+
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+form.ficha section.novos_atributos div.ideais{
+
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+form.ficha section.novos_atributos div.Defeitos{
+
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+form.ficha section.novos_atributos div.Características{
+
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+form.ficha div.mente{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+form.ficha  div.scores{
+
+    width: 70px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+
+
+}
+
+form.ficha div.scores label{
+
+    font-size: 10px;
+    font-family: 'Poppins';
+   /*  margin-top: 10px;
+    margin-bottom: 2.5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Times New Roman'; */
+
+
+}
+
+form.ficha  div.scores ul{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+form.ficha div.scores ul li{
+    
+    height: 12%;
+    width: 70px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+ 
+   /*  display: flex;
+    align-items: center; */
+}
+
+form.ficha  div.scores ul li input{
+
+    width: 100%;
+    padding: 0;
+    border: 0;
+  
+}
+
+form.ficha  div.scores ul li div.score input{
+    text-align: center;
+    font-size: 40px;
+    padding: 2px 0px 0px 0px;
+    background: white;
+    
+}
+
+form.ficha div.scores ul li div.modificador{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+form.ficha div.scores ul li div.modificador input{
+    background: white;
+    width: 30px;
+    height: 20px;
+    border: 1px inset black;
+    border-radius: 20px;
+    margin: -1px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+form.ficha section.atributos div.inspiracao{
 
     display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-end;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
 
 }
-.corpo h2{
+form.ficha section.atributos div.inspiracao input{
 
-   /*  display: flex;
-    padding-bottom: 1rem; */
-  /*   margin-left: 50%; */
-    /* background-color: red;  */
- /*    padding-left: 36rem;
-    font-family: 'Franklin Gothic Medium';
-
-} */ 
-
-
-/* .atributos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    width: 35px;
+    height: 2.3rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.5;
 }
 
-.atributo {
+form.ficha div.attaplicacao div.label{
+
+    position: relative;
+    width: 10rem;
+    height: 25px;
+    margin-top: 6px;
+    border: 1px solid black;
+    border-left: 0;
+    text-align: center;
+}
+    
+form.ficha section.atributos div.proeficiencia{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 1rem;
+
+}
+
+form.ficha section.atributos div.proeficiencia input{
+
+    width: 35px;
+    height: 2.3rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    gap: 1rem;
+    opacity: 0.5;
+}
+
+form.ficha  section.mente label.att_mente{
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+form.ficha div.crencas{
+
+    
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+    text-align: right;
+
+}
+
+form.ficha div.crencas label{
+
+    margin-top: 10px;
+    margin-bottom: 2.5px;
+    font-size: 15px;
+    font-family: 'Poppins';
+
+
+}
+
+form.ficha div.crencas ul li{
+    
     display: flex;
     align-items: center;
 }
 
-.atributo label {
-    flex: 1;
+form.ficha  div.crencas ul li *{
+    
+    margin-left: 5px;
+
 }
 
-.atributo input {
-    width: 80px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+form.ficha  div.crencas ul li label{
+
+    text-transform: none;
+    font-size: 15px;
+    text-align: left;
+    order: 3;
+    font-family: 'Poppins';
 }
 
-.botoes {
+form.ficha  div.crencas ul li input{
+    
+    width: 40px;
+    font-size: 12px;
     text-align: center;
-    margin-top: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+    order: 2;
+    opacity: 0.5;
 }
 
-.botoes button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
+form.ficha div.crencas label.NOME{
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
-.botoes button:hover {
-    background-color: #45a049;
-}
- */
