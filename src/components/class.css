@@ -1,0 +1,148 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover , 
+header ul li a.active{
+    transition: 0.3s;
+    background: #449aa8;
+    color: #2b1055;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+}
+
+.info_persona{
+    display: flex;
+    width: 100%;
+}
+
+.cartao {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: fit-content;
+  height: auto;
+  margin: -150px;
+  float: left;
+  /* perspective: 500px; */
+}
+
+.cartao_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.card_front {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  /* transform: rotateY(180deg); */
+  z-index: 1;
+}
+
+.card_front,
+.card_tras {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.card_front img {
+    margin-top: 5%;
+  width: auto;
+  height: 400px;
+}
+
+.about_classe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+  border: 5px solid #449aa8;
+  background-color: wheat;
+  border-radius: 10px;
+  width: 300px;
+  padding: 12px;
+  
+}
+
+.descricao p{
+    width: fit-content;
+}
+
+.about_personagem{
+    width: 100%;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right,#1c0522, #2b1055);
+}
+
+.footer_container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+}
+
+.footer_item{
+    background-color: #449aa8;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
