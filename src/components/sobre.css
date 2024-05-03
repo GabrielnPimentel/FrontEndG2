@@ -8,8 +8,6 @@
 
 .header_sobre{
     position: absolute;
-    /* Esse margin-left estava jogando toda a página pra esquerda e deixando uma barra lateral a direita */
-    /*  margin-left: 30px;  */
     top: 0;
     left: 0;
     width: 100%;
@@ -17,8 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10000;
+    flex-wrap: wrap;
+}
+
+.header_sobre ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #stars {
@@ -45,6 +48,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 ul li {
@@ -161,3 +165,25 @@ header ul li a.active{
     border-radius: 20px;
     padding: 6px 15px;
 }
+
+@media screen and (max-width: 480px) {
+    .header_sobre {
+        padding: 5px;
+        flex-direction:row;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .header_sobre ul{
+        font-size: 20px;
+    }
+    .header_sobre ul li{
+        margin: 8px;
+    }
+    .circle-container1{
+        margin-top: -90px;
+    }
+    .footer{ 
+        width: 70%;
+    }
+}
+
