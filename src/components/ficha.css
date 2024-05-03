@@ -72,10 +72,13 @@ header{
 } 
 
 #bodyficha{
-    background-image: url('/src/assets/pergaminho1.jpeg');
-    background-size: cover;
+
+    background-image: url('/src/assets/fundoback.png');
+    background-size: 58rem;
     background-position: center;
+    border-radius: 2rem;
     width: fit-content;
+
 } 
 
 .stars{
@@ -676,3 +679,56 @@ form.ficha div.crencas label.NOME{
     border-radius: 20px;
     /* padding: 6px 15px; */
   }
+
+
+/*   @media (max-width: 1270px) {
+
+    .fichabody{
+
+     
+
+    }
+
+    .navbar{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        top: 0;
+        left: 0;
+        position: fixed;
+
+
+    }
+
+    .cards {
+        flex-direction: column;
+        height: 100%;
+       padding-top: 1rem;
+
+    }
+
+    .card {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        width: 90%;
+        height: 80%;
+        text-align: center;
+        font-size: 2rem;
+        background-color: #91001b;
+    }
+
+    .texto_e_foto {
+        flex-direction: column;
+        height: 25%;
+        width: 100%;
+        gap: 1.5rem;
+
+    }
+
+    .foto{
+        margin-top: 3rem;
+    }
+    .texto{
+        font-size: 1.2rem;
+    }
+} */
