@@ -272,7 +272,7 @@ z-index: 10;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #a144a8;
+    background-color: #2b1055;
     max-width: 30rem;
     border-radius: 0.4rem;
     overflow: hidden;
@@ -306,7 +306,7 @@ z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7597de;
+    background-color: #a175de;
     z-index: 2;
     position: relative;
 }
@@ -346,9 +346,9 @@ z-index: 10;
 .accordion-item__paragraph {
     font-weight: bold;
     margin: 0;
+    margin-top: 10px;
     font-size: 1rem;
-    color: #333;
-    font-weight: 600;
+    color: #ffffffcb;
     line-height: 1.3;
 }
 
